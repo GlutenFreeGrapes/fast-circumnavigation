@@ -19,16 +19,8 @@ print(len(set300))
 allflightstop300=pd.DataFrame()
 ainfo=airportsdata.load('IATA')
 airporttocoords={i:(ainfo[i]['lat'],ainfo[i]['lon'] ) for i in top300}
-with open('locations.txt','w')as f:
-	f.write(str(airporttocoords))
 tzfd=timezonefinder.TimezoneFinder()
-geod = Geodesic.WGS84
-alldists={(i,j):(geod.Inverse(airporttocoords[i][0],airporttocoords[i][1],airporttocoords[j][0],airporttocoords[j][1])['s12']/1000) for i in top300 for j in top300}
-with open('distances km.txt','w')as f:
-	f.write(str(alldists))
 airporttz={i:pytz.timezone(tzfd.timezone_at(lat=airporttocoords[i][0],lng=airporttocoords[i][1])) for i in airporttocoords}
-with open('timezones.txt','w')as f:
-	f.write(str(airporttz))
 
 coptions=Options()
 coptions.add_argument('--headless')
@@ -46,27 +38,7 @@ for airport in top300:
 	for i in range(1,4):
 		aday={'departure':[],'arrival':[],'dep time':[],'flight number':[],'distance':[]}
 		# clickcount=0
-		wd.get(f"https://www.flightsfrom.com/{airport}/departures?dateMethod=day&dateFrom=2023-02-0{i}&dateTo=2023-02-0{i}")
-		# with open('html.txt','w',encoding='utf-8') as f:
-		# 	f.write(wd.page_source)
-		moreflightsbutton=wd.find_element(By.CSS_SELECTOR,'button[class*="md-raised blue-md-button md-primary md-button md-ink-ripple"]')
-		thing=wd.find_element(By.CSS_SELECTOR,'div[ng-hide*="departures_offset == 0"]')
-		while not (thing.get_attribute('aria-hidden')=='true' or thing.get_attribute('class')=='ng-hide'):
-			# clickcount+=1		
-			# print('clicking')
-			# moreflightsbutton.submit()
-			# actions.move_to_element(moreflightsbutton).perform()
-			# moreflightsbutton.click()
-			# time.sleep(5)
-
-			# WebDriverWait(wd, 4).until(EC.visibility_of_element_located((By.CSS_SELECTOR,'button[class*="md-raised blue-md-button md-primary md-button md-ink-ripple"]'))).click()
-			moreflightsbutton.click()
-			WebDriverWait(wd, 5).until(EC.invisibility_of_element_located((By.CLASS_NAME,'pageload-background')))
-
-			
-
-			# WebDriverWait(wd, 5).until(EC.element_to_be_clickable(wd.find_element(By.CSS_SELECTOR,'button[class*="md-raised blue-md-button md-primary md-button md-ink-ripple"]'))).click()
-			# WebDriverWait(wd, 20).until(EC.element_to_be_clickable(moreflightsbutton))
+		wd.get(f"https://www.flightsfrom.com/{airport}/destinations?dateMethod=day&dateFrom=2023-02-0{i}&dateTo=2023-02-0{i}")
 		soupy=BeautifulSoup(wd.page_source,'html.parser')
 		for j in soupy.find_all('div',{'class':"airport-departure-list-item departures-25"}):
 			for k in j.find_all('span',{'class':'airport-hide-mobile'}):
