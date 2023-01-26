@@ -21,7 +21,11 @@ ainfo=airportsdata.load('IATA')
 airporttocoords={i:(ainfo[i]['lat'],ainfo[i]['lon'] ) for i in top300}
 tzfd=timezonefinder.TimezoneFinder()
 airporttz={i:pytz.timezone(tzfd.timezone_at(lat=airporttocoords[i][0],lng=airporttocoords[i][1])) for i in airporttocoords}
-
+doneflightdata=pd.read_csv('flights.csv')
+doneflightdata['dep time']=pd.to_datetime(doneflightdata['dep time'])
+doneflightdata=doneflightdata[~(doneflightdata['distance']=='drop')]
+doneflightdata.to_csv('all_flights.csv',index=0)
+print('generated')
 coptions=Options()
 coptions.add_argument('--headless')
 coptions.add_argument('--no-sandbox')
@@ -29,9 +33,9 @@ coptions.add_argument('--disable-dev-shm-usage')
 wd = uc.Chrome(service=Service(ChromeDriverManager().install()), options=coptions)
 wd.maximize_window()
 
-
+flightndatetotimedelta={}
 dcairports={'IAD','DCA','BWI'}
-exp=re.compile('openTimeTableIata.*')
+exp=re.compile('airport-content-destination-listitem.*')
 bing=time.perf_counter()
 print('running')
 for airport in top300:
@@ -40,26 +44,26 @@ for airport in top300:
 		# clickcount=0
 		wd.get(f"https://www.flightsfrom.com/{airport}/destinations?dateMethod=day&dateFrom=2023-02-0{i}&dateTo=2023-02-0{i}")
 		soupy=BeautifulSoup(wd.page_source,'html.parser')
-		for j in soupy.find_all('div',{'class':"airport-departure-list-item departures-25"}):
-			for k in j.find_all('span',{'class':'airport-hide-mobile'}):
-				k.decompose()
-			if j.find('div',{'class':"airport-departure-list-logo"})!=None:
-				j.decompose()
-		flightsies=soupy.find_all('li',{'ng-click':exp})
-		aday['departure']=[airport for j in range(len(flightsies))]
-		for j in flightsies:
-			dest=j.find('div',{'class':"airport-departure-list-item departures-25"}).text.strip()
-			aday['arrival'].append(dest)
-			aday['dep time'].append(airporttz[airport].localize(datetime.datetime.fromisoformat(f"""2023-02-0{i} {j.find('div',{'class':"airport-departure-list-item departures-5 airport-font-midheader"}).text.strip()}:00""")))
-			aday['flight number'].append(j.find('div',{'class':"airport-departure-list-item departures-15 airport-font-midheader"}).text.strip())
-			if dest in set300:
-				aday['distance'].append(alldists[(airport,dest)])
-			else:
-				aday['distance'].append('drop')
-		adayframe=pd.DataFrame(aday)
-		allflightstop300=pd.concat([allflightstop300,adayframe])
-		allflightstop300.to_csv('flights.csv',index=False)
-		print(i,len(flightsies))
+		for j in soupy.find_all('li',{'class':exp}):
+			dest=j['data-iata']
+			for l in j.find_all('div',{'class':'airport-content-destination-list-time'}):
+				for k in l.find_all('span',{'class':'airport-font-smallheader'}):
+					k.decompose()
+			nums=l.text.strip().replace('m','').replace('h','').split()
+			flightndatetotimedelta[(airport,dest,datetime.date.fromisoformat(f'2023-02-0{i}'))]=datetime.timedelta(hours=int(nums[0]),minutes=int(nums[1]))
+		print(i)
 	print(airport)
+	with open('flighttimes.txt','w') as f:
+		f.write(str(flightndatetotimedelta))
+def addarrtime(row):
+	arr=row['arrival']
+	deptime=row['dep time']
+	arrtime=deptime+flightndatetotimedelta[(row['departure'],arr,deptime.date())]
+	if arr in set300:
+		return arrtime.astimezone(airporttz[arr])
+	else:
+		return arrtime
+doneflightdata['arr time']=doneflightdata.apply(lambda row: addarrtime(row), axis=1)
+doneflightdata.to_csv('all_flights.csv',index=0)
 print(time.perf_counter()-bing,'seconds')
 
