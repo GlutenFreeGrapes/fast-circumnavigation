@@ -1,0 +1,487 @@
+{
+    "result": [
+        {
+            "codeshare_info": "KE 5036",
+            "carrier": "DL",
+            "flightnumber": "27",
+            "iata_from": "ATL",
+            "iata_to": "ICN",
+            "departure_time": "00:05",
+            "arrival_time": "05:45:00",
+            "elapsed_time": "940",
+            "date_from": "2022-12-15",
+            "date_to": "2023-03-12",
+            "departure_terminal": "I",
+            "arrival_terminal": "2",
+            "id": 610323,
+            "sub_aircraft_code": "359",
+            "seats_total": "315",
+            "seats_firstclass": "0",
+            "seats_business": "31",
+            "seats_premiumeconomy": "33",
+            "seats_economy": "251",
+            "selected_date": "Wednesday, 1 February, 2023",
+            "clean_date": "2023-02-01",
+            "clean_year": "23",
+            "clean_month": "02",
+            "clean_day": "01",
+            "allmeals": [
+                "Dinner"
+            ],
+            "onboardservices": "Entertainment on-demand, In-seat video player/library, Wi-Fi, Lie flat seat - business class, 110v AC power, USB power",
+            "airport": {
+                "name": "Incheon Intl",
+                "city_name": "Seoul",
+                "IATA": "ICN"
+            },
+            "departure_airport": {
+                "name": "Hartsfield\u2013Jackson Atlanta International Airport",
+                "city_name": "Atlanta",
+                "IATA": "ATL"
+            },
+            "aircraft": {
+                "name": "Airbus A350-900",
+                "IATA": "359"
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "shortname": "Delta Air Lines",
+                "IATA": "DL",
+                "url": "http://www.delta.com/"
+            }
+        }
+    ],
+    "dates": [
+        {
+            "count": "1",
+            "date": "2023-01-30",
+            "readable_date": "Jan 30",
+            "weekday": "Monday",
+            "weekday_short": "Mon"
+        },
+        {
+            "count": "1",
+            "date": "2023-01-31",
+            "readable_date": "Jan 31",
+            "weekday": "Tuesday",
+            "weekday_short": "Tue"
+        },
+        {
+            "count": "1",
+            "date": "2023-02-01",
+            "readable_date": "Feb 1",
+            "weekday": "Wednesday",
+            "weekday_short": "Wed"
+        },
+        {
+            "count": "1",
+            "date": "2023-02-02",
+            "readable_date": "Feb 2",
+            "weekday": "Thursday",
+            "weekday_short": "Thu"
+        },
+        {
+            "count": "1",
+            "date": "2023-02-03",
+            "readable_date": "Feb 3",
+            "weekday": "Friday",
+            "weekday_short": "Fri"
+        }
+    ],
+    "date": "2023-02-01",
+    "next_offset": 0,
+    "firstdate": "Wednesday, 1 February, 2023",
+    "sheduledays": [
+        {
+            "selected_date": "Thursday, 2 February, 2023",
+            "count": 1,
+            "result": [
+                {
+                    "meals": "D D D D D D D D D D D D D D D D D D D D D D",
+                    "classes_full": "JCDIZPAGWSYBMHQKLUTXVE",
+                    "codeshare_info": "KE 5036",
+                    "in_flight_service": "3/ 15/ 18/ 20/ 22/ 27/ 99",
+                    "carrier": "DL",
+                    "flightnumber": "27",
+                    "iata_from": "ATL",
+                    "iata_to": "ICN",
+                    "departure_time": "00:05",
+                    "arrival_time": "05:45:00",
+                    "elapsed_time": "940",
+                    "date_from": "2022-12-15",
+                    "date_to": "2023-03-12",
+                    "departure_terminal": "I",
+                    "arrival_terminal": "2",
+                    "id": 610323,
+                    "sub_aircraft_code": "359",
+                    "seats_total": "315",
+                    "seats_firstclass": "0",
+                    "seats_business": "31",
+                    "seats_premiumeconomy": "33",
+                    "seats_economy": "251",
+                    "selected_date": "Thursday, 2 February, 2023",
+                    "clean_date": "2023-02-02",
+                    "clean_year": "23",
+                    "clean_month": "02",
+                    "clean_day": "02",
+                    "allmeals": [
+                        "Dinner"
+                    ],
+                    "onboardservices": "Entertainment on-demand, In-seat video player/library, Wi-Fi, Lie flat seat - business class, 110v AC power, USB power",
+                    "airport": {
+                        "name": "Incheon Intl",
+                        "city_name": "Seoul",
+                        "IATA": "ICN"
+                    },
+                    "departure_airport": {
+                        "name": "Hartsfield\u2013Jackson Atlanta International Airport",
+                        "city_name": "Atlanta",
+                        "IATA": "ATL"
+                    },
+                    "aircraft": {
+                        "name": "Airbus A350-900",
+                        "IATA": "359"
+                    },
+                    "airline": {
+                        "name": "Delta Air Lines",
+                        "shortname": "Delta Air Lines",
+                        "IATA": "DL",
+                        "url": "http://www.delta.com/"
+                    }
+                }
+            ],
+            "day": "Thursday",
+            "dayshort": "Thu",
+            "date": "2",
+            "month": "Feb",
+            "year": "23"
+        },
+        {
+            "selected_date": "Friday, 3 February, 2023",
+            "count": 1,
+            "result": [
+                {
+                    "meals": "D D D D D D D D D D D D D D D D D D D D D D",
+                    "classes_full": "JCDIZPAGWSYBMHQKLUTXVE",
+                    "codeshare_info": "KE 5036",
+                    "in_flight_service": "3/ 15/ 18/ 20/ 22/ 27/ 99",
+                    "carrier": "DL",
+                    "flightnumber": "27",
+                    "iata_from": "ATL",
+                    "iata_to": "ICN",
+                    "departure_time": "00:05",
+                    "arrival_time": "05:45:00",
+                    "elapsed_time": "940",
+                    "date_from": "2022-12-15",
+                    "date_to": "2023-03-12",
+                    "departure_terminal": "I",
+                    "arrival_terminal": "2",
+                    "id": 610323,
+                    "sub_aircraft_code": "359",
+                    "seats_total": "315",
+                    "seats_firstclass": "0",
+                    "seats_business": "31",
+                    "seats_premiumeconomy": "33",
+                    "seats_economy": "251",
+                    "selected_date": "Friday, 3 February, 2023",
+                    "clean_date": "2023-02-03",
+                    "clean_year": "23",
+                    "clean_month": "02",
+                    "clean_day": "03",
+                    "allmeals": [
+                        "Dinner"
+                    ],
+                    "onboardservices": "Entertainment on-demand, In-seat video player/library, Wi-Fi, Lie flat seat - business class, 110v AC power, USB power",
+                    "airport": {
+                        "name": "Incheon Intl",
+                        "city_name": "Seoul",
+                        "IATA": "ICN"
+                    },
+                    "departure_airport": {
+                        "name": "Hartsfield\u2013Jackson Atlanta International Airport",
+                        "city_name": "Atlanta",
+                        "IATA": "ATL"
+                    },
+                    "aircraft": {
+                        "name": "Airbus A350-900",
+                        "IATA": "359"
+                    },
+                    "airline": {
+                        "name": "Delta Air Lines",
+                        "shortname": "Delta Air Lines",
+                        "IATA": "DL",
+                        "url": "http://www.delta.com/"
+                    }
+                }
+            ],
+            "day": "Friday",
+            "dayshort": "Fri",
+            "date": "3",
+            "month": "Feb",
+            "year": "23"
+        },
+        {
+            "selected_date": "Saturday, 4 February, 2023",
+            "count": 1,
+            "result": [
+                {
+                    "meals": "D D D D D D D D D D D D D D D D D D D D D D",
+                    "classes_full": "JCDIZPAGWSYBMHQKLUTXVE",
+                    "codeshare_info": "KE 5036",
+                    "in_flight_service": "3/ 15/ 18/ 20/ 22/ 27/ 99",
+                    "carrier": "DL",
+                    "flightnumber": "27",
+                    "iata_from": "ATL",
+                    "iata_to": "ICN",
+                    "departure_time": "00:05",
+                    "arrival_time": "05:45:00",
+                    "elapsed_time": "940",
+                    "date_from": "2022-12-15",
+                    "date_to": "2023-03-12",
+                    "departure_terminal": "I",
+                    "arrival_terminal": "2",
+                    "id": 610323,
+                    "sub_aircraft_code": "359",
+                    "seats_total": "315",
+                    "seats_firstclass": "0",
+                    "seats_business": "31",
+                    "seats_premiumeconomy": "33",
+                    "seats_economy": "251",
+                    "selected_date": "Saturday, 4 February, 2023",
+                    "clean_date": "2023-02-04",
+                    "clean_year": "23",
+                    "clean_month": "02",
+                    "clean_day": "04",
+                    "allmeals": [
+                        "Dinner"
+                    ],
+                    "onboardservices": "Entertainment on-demand, In-seat video player/library, Wi-Fi, Lie flat seat - business class, 110v AC power, USB power",
+                    "airport": {
+                        "name": "Incheon Intl",
+                        "city_name": "Seoul",
+                        "IATA": "ICN"
+                    },
+                    "departure_airport": {
+                        "name": "Hartsfield\u2013Jackson Atlanta International Airport",
+                        "city_name": "Atlanta",
+                        "IATA": "ATL"
+                    },
+                    "aircraft": {
+                        "name": "Airbus A350-900",
+                        "IATA": "359"
+                    },
+                    "airline": {
+                        "name": "Delta Air Lines",
+                        "shortname": "Delta Air Lines",
+                        "IATA": "DL",
+                        "url": "http://www.delta.com/"
+                    }
+                }
+            ],
+            "day": "Saturday",
+            "dayshort": "Sat",
+            "date": "4",
+            "month": "Feb",
+            "year": "23"
+        },
+        {
+            "selected_date": "Sunday, 5 February, 2023",
+            "count": 1,
+            "result": [
+                {
+                    "meals": "D D D D D D D D D D D D D D D D D D D D D D",
+                    "classes_full": "JCDIZPAGWSYBMHQKLUTXVE",
+                    "codeshare_info": "KE 5036",
+                    "in_flight_service": "3/ 15/ 18/ 20/ 22/ 27/ 99",
+                    "carrier": "DL",
+                    "flightnumber": "27",
+                    "iata_from": "ATL",
+                    "iata_to": "ICN",
+                    "departure_time": "00:05",
+                    "arrival_time": "05:45:00",
+                    "elapsed_time": "940",
+                    "date_from": "2022-12-15",
+                    "date_to": "2023-03-12",
+                    "departure_terminal": "I",
+                    "arrival_terminal": "2",
+                    "id": 610323,
+                    "sub_aircraft_code": "359",
+                    "seats_total": "315",
+                    "seats_firstclass": "0",
+                    "seats_business": "31",
+                    "seats_premiumeconomy": "33",
+                    "seats_economy": "251",
+                    "selected_date": "Sunday, 5 February, 2023",
+                    "clean_date": "2023-02-05",
+                    "clean_year": "23",
+                    "clean_month": "02",
+                    "clean_day": "05",
+                    "allmeals": [
+                        "Dinner"
+                    ],
+                    "onboardservices": "Entertainment on-demand, In-seat video player/library, Wi-Fi, Lie flat seat - business class, 110v AC power, USB power",
+                    "airport": {
+                        "name": "Incheon Intl",
+                        "city_name": "Seoul",
+                        "IATA": "ICN"
+                    },
+                    "departure_airport": {
+                        "name": "Hartsfield\u2013Jackson Atlanta International Airport",
+                        "city_name": "Atlanta",
+                        "IATA": "ATL"
+                    },
+                    "aircraft": {
+                        "name": "Airbus A350-900",
+                        "IATA": "359"
+                    },
+                    "airline": {
+                        "name": "Delta Air Lines",
+                        "shortname": "Delta Air Lines",
+                        "IATA": "DL",
+                        "url": "http://www.delta.com/"
+                    }
+                }
+            ],
+            "day": "Sunday",
+            "dayshort": "Sun",
+            "date": "5",
+            "month": "Feb",
+            "year": "23"
+        },
+        {
+            "selected_date": "Monday, 6 February, 2023",
+            "count": 1,
+            "result": [
+                {
+                    "meals": "D D D D D D D D D D D D D D D D D D D D D D",
+                    "classes_full": "JCDIZPAGWSYBMHQKLUTXVE",
+                    "codeshare_info": "KE 5036",
+                    "in_flight_service": "3/ 15/ 18/ 20/ 22/ 27/ 99",
+                    "carrier": "DL",
+                    "flightnumber": "27",
+                    "iata_from": "ATL",
+                    "iata_to": "ICN",
+                    "departure_time": "00:05",
+                    "arrival_time": "05:45:00",
+                    "elapsed_time": "940",
+                    "date_from": "2022-12-15",
+                    "date_to": "2023-03-12",
+                    "departure_terminal": "I",
+                    "arrival_terminal": "2",
+                    "id": 610323,
+                    "sub_aircraft_code": "359",
+                    "seats_total": "315",
+                    "seats_firstclass": "0",
+                    "seats_business": "31",
+                    "seats_premiumeconomy": "33",
+                    "seats_economy": "251",
+                    "selected_date": "Monday, 6 February, 2023",
+                    "clean_date": "2023-02-06",
+                    "clean_year": "23",
+                    "clean_month": "02",
+                    "clean_day": "06",
+                    "allmeals": [
+                        "Dinner"
+                    ],
+                    "onboardservices": "Entertainment on-demand, In-seat video player/library, Wi-Fi, Lie flat seat - business class, 110v AC power, USB power",
+                    "airport": {
+                        "name": "Incheon Intl",
+                        "city_name": "Seoul",
+                        "IATA": "ICN"
+                    },
+                    "departure_airport": {
+                        "name": "Hartsfield\u2013Jackson Atlanta International Airport",
+                        "city_name": "Atlanta",
+                        "IATA": "ATL"
+                    },
+                    "aircraft": {
+                        "name": "Airbus A350-900",
+                        "IATA": "359"
+                    },
+                    "airline": {
+                        "name": "Delta Air Lines",
+                        "shortname": "Delta Air Lines",
+                        "IATA": "DL",
+                        "url": "http://www.delta.com/"
+                    }
+                }
+            ],
+            "day": "Monday",
+            "dayshort": "Mon",
+            "date": "6",
+            "month": "Feb",
+            "year": "23"
+        },
+        {
+            "selected_date": "Tuesday, 7 February, 2023",
+            "count": 1,
+            "result": [
+                {
+                    "meals": "D D D D D D D D D D D D D D D D D D D D D D",
+                    "classes_full": "JCDIZPAGWSYBMHQKLUTXVE",
+                    "codeshare_info": "KE 5036",
+                    "in_flight_service": "3/ 15/ 18/ 20/ 22/ 27/ 99",
+                    "carrier": "DL",
+                    "flightnumber": "27",
+                    "iata_from": "ATL",
+                    "iata_to": "ICN",
+                    "departure_time": "00:05",
+                    "arrival_time": "05:45:00",
+                    "elapsed_time": "940",
+                    "date_from": "2022-12-15",
+                    "date_to": "2023-03-12",
+                    "departure_terminal": "I",
+                    "arrival_terminal": "2",
+                    "id": 610323,
+                    "sub_aircraft_code": "359",
+                    "seats_total": "315",
+                    "seats_firstclass": "0",
+                    "seats_business": "31",
+                    "seats_premiumeconomy": "33",
+                    "seats_economy": "251",
+                    "selected_date": "Tuesday, 7 February, 2023",
+                    "clean_date": "2023-02-07",
+                    "clean_year": "23",
+                    "clean_month": "02",
+                    "clean_day": "07",
+                    "allmeals": [
+                        "Dinner"
+                    ],
+                    "onboardservices": "Entertainment on-demand, In-seat video player/library, Wi-Fi, Lie flat seat - business class, 110v AC power, USB power",
+                    "airport": {
+                        "name": "Incheon Intl",
+                        "city_name": "Seoul",
+                        "IATA": "ICN"
+                    },
+                    "departure_airport": {
+                        "name": "Hartsfield\u2013Jackson Atlanta International Airport",
+                        "city_name": "Atlanta",
+                        "IATA": "ATL"
+                    },
+                    "aircraft": {
+                        "name": "Airbus A350-900",
+                        "IATA": "359"
+                    },
+                    "airline": {
+                        "name": "Delta Air Lines",
+                        "shortname": "Delta Air Lines",
+                        "IATA": "DL",
+                        "url": "http://www.delta.com/"
+                    }
+                }
+            ],
+            "day": "Tuesday",
+            "dayshort": "Tue",
+            "date": "7",
+            "month": "Feb",
+            "year": "23"
+        }
+    ],
+    "firstdate_short": {
+        "day": "Wednesday",
+        "dayshort": "Wed",
+        "date": "1",
+        "month": "Feb",
+        "year": "23"
+    }
+}
