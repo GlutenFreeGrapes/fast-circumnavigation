@@ -1,0 +1,2 @@
+# fast-circumnavigation
+This was a Discord server challenge, which was to find the fastest circumnavigation around the world by plane (must be 37000 km or greater) starting at any of Washington, DC's 3 airports (IAD, DCA, BWI) starting on February 1, 2023. Using a breadth-first search algorithm and some web-scraping, the quickest sequence of flights would have landed on February 3, 2023 at 9:00 AM. 
